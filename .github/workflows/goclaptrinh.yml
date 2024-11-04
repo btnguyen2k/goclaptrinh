@@ -1,4 +1,4 @@
-name: mpn
+name: goclaptrinh
 
 on:
   # Automatically trigger it when detected changes in repo
