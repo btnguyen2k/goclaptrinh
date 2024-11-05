@@ -1,14 +1,14 @@
-name: mpn
+name: goclaptrinh
 
 on:
-  # Automatically trigger it when detected changes in repo
-  push:
-    branches: [ main ]
-    paths: [ 'dosrc/**', '.github/workflows/**', 'Dockerfile' ]
+  # push:
+  #   branches: [ main ]
+  #   paths: [ 'dosrc/**', '.github/workflows/**', 'Dockerfile' ]
 
   pull_request:
     branches: [ main ]
     types: [ closed ]
+    paths: [ 'dosrc/**', '.github/workflows/**', 'Dockerfile' ]
 
   # Allow mannually trigger 
   workflow_dispatch:      
@@ -18,7 +18,7 @@ env:
 
 jobs:
   build:
-    if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch' || github.event_name == 'push'
+    if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout to the branch
