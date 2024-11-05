@@ -3,7 +3,7 @@
 [[do-tag tutorial_only]]
 ```
 
-## Đề bài
+# Đề bài
 
 ```bs-alert primary
 
@@ -16,7 +16,7 @@ Bài tập này củng cố kiến thức về:
 
 Để đơn giản, chúng ta sẽ nhập ngày, tháng, năm riêng biệt từ bàn phím. Và giá trị của năm sẽ nằm trong khoảng từ 1900 đến 2100.
 
-## Hướng dẫn bài giải
+# Hướng dẫn bài giải
 
 ```bs-alert secondary
 
@@ -344,13 +344,20 @@ Chúng ta chỉnh lại điều kiện kiểm tra ở phiên bản cuối cùng 
     ]]
 ```
 
-## Lời kết
+# Lời kết
 
 Chúng ta đã cùng nhau giải bài thực hành kiểm tra ngày/tháng/năm nhập vào từ bàn phím có hợp lệ hay không. Bài tập này giúp bạn củng cố kiến thức về nhập/xuất, kiểm tra điều kiện và rẽ nhánh chương trình với câu lệnh `if` và `switch/case`.
 
 Lời giải trong bài viết là 1 cách giải tham khảo, _không phải là lời giải duy nhất_. Bạn hãy chủ động trải nghiệm với các cách giải khác nhau của riêng bạn.
 
 Cuối cùng, chúc mừng bạn đã hoàn thành bài tập này!
+
+```bs-alert secondary
+
+Trong bài viết có sử dụng các cụm từ "nhập từ bàn phím" và "xuất/in ra màn hình" là các cụ từ "bình dân" để mô tả hành động nhập/xuất dữ liệu. Trong thực tế, chương trình sẽ đọc dữ liệu đầu vào từ 1 dòng dữ liệu gọi là standard input (hoặc viết tắt `stdin`), và xuất dữ liệu ra standard output (hoặc viết tắt `stdout`).
+
+Xem thêm: https://en.wikipedia.org/wiki/Standard_streams
+```
 
 <hr>
 
