@@ -3,7 +3,7 @@
 [[do-tag tutorial_only]]
 ```
 
-## Đề bài
+# Đề bài
 
 ```bs-alert primary
 
@@ -16,7 +16,7 @@ Bài tập này củng cố kiến thức về:
 
 Để đơn giản, chúng ta sẽ nhập ngày, tháng, năm riêng biệt từ bàn phím. Và giá trị của năm sẽ nằm trong khoảng từ 1900 đến 2100.
 
-## Hướng dẫn bài giải
+# Hướng dẫn bài giải
 
 ```bs-alert secondary
 
@@ -344,7 +344,7 @@ Chúng ta chỉnh lại điều kiện kiểm tra ở phiên bản cuối cùng 
     ]]
 ```
 
-## Lời kết
+# Lời kết
 
 Chúng ta đã cùng nhau giải bài thực hành kiểm tra ngày/tháng/năm nhập vào từ bàn phím có hợp lệ hay không. Bài tập này giúp bạn củng cố kiến thức về nhập/xuất, kiểm tra điều kiện và rẽ nhánh chương trình với câu lệnh `if` và `switch/case`.
 
