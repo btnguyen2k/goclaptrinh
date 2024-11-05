@@ -17,15 +17,11 @@ Bài tập này củng cố kiến thức về:
 Để đơn giản, chúng ta sẽ nhập ngày, tháng, năm riêng biệt từ bàn phím. Và giá trị của năm sẽ nằm trong khoảng từ 1900 đến 2100.
 
 ## Hướng dẫn bài giải
-if (ngay < 1 || ngay > 31) {
+
 ```bs-alert secondary
 
 [[do-tag playground_ccpp]]
 ```
-
-<hr>
-
-_[[do-tag ghissue_comment]]_
 
 ### Nhập ngày, tháng, năm
 
