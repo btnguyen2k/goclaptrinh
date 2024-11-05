@@ -219,3 +219,143 @@ Ta biết rằng giá trị của ngày là 1 số nguyên nằm trong khoảng 
     ```
     ]]
 ```
+
+- Trong đoạn mã trên, mỗi khi điều kiện kiểm tra không hợp lệ ta in ra thông báo và thoát khỏi chương trình ngay với câu lệnh `return 1;`. Do vậy ta không cần sử dụng câu lệnh `else` kèm với `if`.
+- Bạn không nhất thiết sử dụng 1 khuôn mẫu logic kiểm tra như trên. Chúng tôi khuyến khích bạn thử các trải nghiệm khác nhau như thay đổi thứ tự kiểm tra ngày/tháng/năm. Hoặc kiểm tra theo một logic khác, ví dụ thay vì `if (ngay < 1 || ngay > 31)` bạn có thể dùng `if (!(ngay >= 1 && ngay <= 31))`; hoặc thử nghiệm `if` cùng với `else`, hay `if` lồng nhau, v.v. Hay thậm chí 1 câu lệnh `if` duy nhất cùng với các toán tử `||` hoặc `&&` để kiểm tra toàn bộ các điều kiện một lần.
+
+Tới thời điểm này chương trình của chúng ta chạy, nhưng về logic thì chưa hoàn toàn đúng đắn. Không phải tháng nào cũng có số ngày như nhau: tháng 1, 3, 5, 7, 8, 10 và 12 có 31 ngày; tháng 4, 6, 9 và 11 có 30 ngày; và tháng 2 có 28 ngày. Ta có phiên bản tiếp theo của chương trình như sau:
+
+```bs-tabs
+    [[bs-tab main.c
+    ```c
+    if (nam < 1900 || nam > 2100) {
+        printf("Ngày/tháng/năm nhập vào KHÔNG hợp lệ\n");
+        return 1;
+    }
+    switch (thang) {
+        case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+            if (ngay < 1 || ngay > 31) {
+                printf("Ngày/tháng/năm nhập vào KHÔNG hợp lệ\n");
+                return 1;
+            }
+            break;
+        case 4: case 6: case 9: case 11:
+            if (ngay < 1 || ngay > 30) {
+                printf("Ngày/tháng/năm nhập vào KHÔNG hợp lệ\n");
+                return 1;
+            }
+            break;
+        case 2:
+            if (ngay < 1 || ngay > 28) {
+                printf("Ngày/tháng/năm nhập vào KHÔNG hợp lệ\n");
+                return 1;
+            }
+            break;
+        default:
+            // tháng không nằm trong khoảng [1, 12], nên dĩ nhiên là không hợp lệ
+            printf("Ngày/tháng/năm nhập vào KHÔNG hợp lệ\n");
+            return 1;
+    }
+    printf("Ngày/tháng/năm nhập vào hợp lệ\n");
+    return 0;
+    ```
+    ]]
+
+    [[bs-tab main.cpp
+    ```cpp
+    if (nam < 1900 || nam > 2100) {
+        std::cout << "Ngày/tháng/năm nhập vào KHÔNG hợp lệ" << std::endl;
+        return 1;
+    }
+    switch (thang) {
+        case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+            if (ngay < 1 || ngay > 31) {
+                std::cout << "Ngày/tháng/năm nhập vào KHÔNG hợp lệ" << std::endl;
+                return 1;
+            }
+            break;
+        case 4: case 6: case 9: case 11:
+            if (ngay < 1 || ngay > 30) {
+                std::cout << "Ngày/tháng/năm nhập vào KHÔNG hợp lệ" << std::endl;
+                return 1;
+            }
+            break;
+        case 2:
+            if (ngay < 1 || ngay > 28) {
+                std::cout << "Ngày/tháng/năm nhập vào KHÔNG hợp lệ" << std::endl;
+                return 1;
+            }
+            break;
+        default:
+            // tháng không nằm trong khoảng [1, 12], nên dĩ nhiên là không hợp lệ
+            std::cout << "Ngày/tháng/năm nhập vào KHÔNG hợp lệ" << std::endl;
+            return 1;
+    }
+    printf("Ngày/tháng/năm nhập vào hợp lệ\n");
+    return 0;
+    ```
+    ]]
+```
+
+Ở phiên bản này, thay vì sử dụng `if` để kiểm tra giá trị của tháng và ngày, ta sử dụng `switch/case` để kiểm tra giá trị của ngày theo các trường hợp khác nhau của tháng.
+
+Lúc này chương trình của chúng ta đã gần hoàn thiện, nhưng vẫn còn 1 trường hợp cần xử lý: vào năm nhuận thì tháng 2 sẽ có 29 ngày, thay vì 28 ngày như bình thường.
+
+```bs-alert info
+
+Năm nhuận xảy ra vào mỗi 4 năm 1 lần - số năm chia hết cho 4, ngoại trừ những năm chia hết cho 100 nhưng không chia hết cho 400. Ví dụ, năm 2000 là năm nhuận (chia hết cho 4 và 100 VÀ 400), nhưng năm 1900 không phải là năm nhuận (chia hết cho 4 và 100 nhưng KHÔNG chia hết cho 400).
+
+Xem thêm: https://vi.wikipedia.org/wiki/N%C4%83m_nhu%E1%BA%ADn
+```
+
+Chúng ta chỉnh lại điều kiện kiểm tra ở phiên bản cuối cùng của chương trình như sau:
+
+```bs-tabs
+    [[bs-tab main.c
+    ```c
+    case 2:
+        if ((nam % 4 == 0 && nam % 100 != 0) || nam % 400 == 0) {
+            if (ngay < 1 || ngay > 29) {
+                printf("Ngày/tháng/năm nhập vào KHÔNG hợp lệ\n");
+                return 1;
+            }
+        } else {
+            if (ngay < 1 || ngay > 28) {
+                printf("Ngày/tháng/năm nhập vào KHÔNG hợp lệ\n");
+                return 1;
+            }
+        }
+        break;
+    ```
+    ]]
+
+    [[bs-tab main.cpp
+    ```cpp
+    case 2:
+        if ((nam % 4 == 0 && nam % 100 != 0) || nam % 400 == 0) {
+            if (ngay < 1 || ngay > 29) {
+                std::cout << "Ngày/tháng/năm nhập vào KHÔNG hợp lệ" << std::endl;
+                return 1;
+            }
+        } else {
+            if (ngay < 1 || ngay > 28) {
+                std::cout << "Ngày/tháng/năm nhập vào KHÔNG hợp lệ" << std::endl;
+                return 1;
+            }
+        }
+        break;
+    ```
+    ]]
+```
+
+## Lời kết
+
+Chúng ta đã cùng nhau giải bài thực hành kiểm tra ngày/tháng/năm nhập vào từ bàn phím có hợp lệ hay không. Bài tập này giúp bạn củng cố kiến thức về nhập/xuất, kiểm tra điều kiện và rẽ nhánh chương trình với câu lệnh `if` và `switch/case`.
+
+Lời giải trong bài viết là 1 cách giải tham khảo, _không phải là lời giải duy nhất_. Bạn hãy chủ động trải nghiệm với các cách giải khác nhau của riêng bạn.
+
+Cuối cùng, chúc mừng bạn đã hoàn thành bài tập này!
+
+<hr>
+
+_[[do-tag ghissue_comment]]_
