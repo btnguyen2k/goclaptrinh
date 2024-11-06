@@ -9,7 +9,7 @@ RUN cd /build \
     && go install github.com/btnguyen2k/docms/docli@cli-v0.3.1.3 \
     && docli build --purge --src dosrc --out dodata
 
-FROM btnguyen2k/docmsruntime:latest as docmsruntime
+FROM btnguyen2k/docmsruntime:stable as docmsruntime
 LABEL maintainer="Thanh Nguyen"
 COPY --from=builder_docs /build/dodata /app/dodata
 WORKDIR /app
