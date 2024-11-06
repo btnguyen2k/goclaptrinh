@@ -3,6 +3,6 @@ summary: 'Bài tập: Viết chương trình C/C++ kiểm tra xem một ngày/th
 icon:
 img: '{"s":"entry-img-s.jpg","v":"entry-img-v.jpg","h":"entry-img-h.jpg"}'
 file: index-vi.md
-tags: ["C/C++", "300"]
+tags: ["C/C++", "300", "nhập/xuất", "rẽ nhánh"]
 tc: 1730729984
 tu: 1730729984
