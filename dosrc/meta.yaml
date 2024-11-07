@@ -18,13 +18,10 @@ tags:
     Nếu máy tính của bạn không có sẵn trình biên dịch C/C++, bạn có thể sử dụng bản online tại [OnlineGDB](https://www.onlinegdb.com/) để thực hành.
 tagalias:
   vi:
-    "Go"  : [golang]
-    "C#"  : [csharp]
-    ".NET": [dotnet]
-    "Regular Expression": [regex]
-    # golang: [go]
-    # csharp: [c#]
-    # dotnet: [.net]
+    "Go"    : [golang]
+    "C#"    : [csharp]
+    ".NET"  : [dotnet]
+    "RegExp": [regular expression]
 mode: blog
 author:
   name: Thanh Nguyen
