@@ -203,6 +203,12 @@ Nâng nhẹ độ khó lên một cấp với **10 ngàn** mặt hàng và **1 t
 
 Đẩy độ khó lên nhẹ một tẹo nữa với **100 ngàn** mặt hàng và **100 triệu** đơn hàng cần xử lý xem code của bạn chạy như thế nào: https://github.com/btnguyen2k/goclaptrinh/tree/main/quests/order-processing-and-inventory-management/data100000
 
+
+```bs-alert warning
+
+Do file dữ liệu khá hơn (> 1.5Gb) nên server đôi khi không đủ bandwidth để download. Nếu bạn gặp lỗi khi download, hãy thử lại sau một thời gian hoặc liên hệ tác giả bài viết (trên GitHub repo).
+```
+
 <hr>
 
 _[[do-tag ghissue_comment]]_
