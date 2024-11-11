@@ -1,0 +1,8 @@
+title: "Giới thiệu Crockford Base32"
+summary: "Bài viết giới thiệu Crockford Base32, một hệ mã hóa và giải mã sử dụng bảng chữ cái gồm 32 ký hiệu."
+icon:
+img: '{"s":"entry-img-s.jpg","v":"entry-img-v.jpg","h":"entry-img-h.jpg"}'
+file: index-vi.md
+tags: ["base32", "encoding", "decoding"]
+tc: 1730895353
+tu: 1730895353

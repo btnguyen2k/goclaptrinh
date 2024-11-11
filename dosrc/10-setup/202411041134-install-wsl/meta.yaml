@@ -1,0 +1,8 @@
+title: "Cài đặt Windows Subsystem for Linux"
+summary: "Windows Subsystem for Linux (WSL) cho phép lập trình viên chạy 1 môi trường Linux trên Windows. Bài viết tóm tắt cách cài đặt WSL trên Windows."
+icon:
+img: '{"s":"entry-img-s.jpg","v":"entry-img-v.jpg","h":"entry-img-h.jpg"}'
+file: index-vi.md
+tags: [wsl, wsl2, linux]
+tc: 1730720062
+tu: 1730720062

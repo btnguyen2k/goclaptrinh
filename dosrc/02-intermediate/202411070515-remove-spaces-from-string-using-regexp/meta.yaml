@@ -1,0 +1,8 @@
+title: "Xóa khoảng trắng trong chuỗi sử dụng Regular Expression"
+summary: "Bài tập: Sử dụng Regular Expresion xoá tất cả khoảng trắng ở đầu/cuối chuỗi và xoá các khoảng trắng thừa ở giữa chuỗi."
+icon:
+img: '{"s":"entry-img-s.jpg","v":"entry-img-v.jpg","h":"entry-img-h.jpg"}'
+file: index-vi.md
+tags: ["xử lý chuỗi", "regexp"]
+tc: 1730956500
+tu: 1730956500

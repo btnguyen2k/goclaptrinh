@@ -1,0 +1,8 @@
+title: "[C/C++] Xóa khoảng trắng trong chuỗi"
+summary: "Bài tập: Viết chương trình C/C++, sử dụng function, xoá tất cả khoảng trắng ở đầu/cuối chuỗi và xoá các khoảng trắng thừa ở giữa chuỗi."
+icon:
+img: '{"s":"entry-img-s.jpg","v":"entry-img-v.jpg","h":"entry-img-h.jpg"}'
+file: index-vi.md
+tags: ["C/C++", "300", "xử lý chuỗi", "hàm"]
+tc: 1730859529
+tu: 1730859529

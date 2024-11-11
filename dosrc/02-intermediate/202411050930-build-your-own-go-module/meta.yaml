@@ -1,0 +1,8 @@
+title: "Phát triển một module Go của riêng bạn"
+summary: "Bài viết hướng dẫn bạn phát triển và phát hành một module Go."
+icon:
+img: '{"s":"entry-img-s.jpg","v":"entry-img-v.jpg","h":"entry-img-h.jpg"}'
+file: index-vi.md
+tags: ["go", "gomod"]
+tc: 1730799044
+tu: 1730799044
