@@ -1,0 +1,8 @@
+title: "[C/C++] Chuyển số thập nhân sang cơ số 32"
+summary: "Bài tập: Viết chương trình C/C++ chuyển kiểm 1 số thập phân sang hệ cơ số 32 và ngược lại."
+icon:
+img: '{"s":"entry-img-s.jpg","v":"entry-img-v.jpg","h":"entry-img-h.jpg"}'
+file: index-vi.md
+tags: ["C/C++", "300", "base32"]
+tc: 1731372618
+tu: 1731372618
