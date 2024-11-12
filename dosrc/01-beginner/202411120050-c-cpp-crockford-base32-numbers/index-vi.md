@@ -17,7 +17,7 @@ Bài tập này củng cố kiến thức về:
 
 _Xem bài viết giới thiệu về hệ cơ số 32 và bảng mã Crockford Base32 tại đây: [Crockford Base32](/cms/others/crockford-base32/)._
 
-Để đơn giản, chương trình chỉ xử lý các số _nguyên dương_. Giả định rằng dữ liệu nhập vào luôn đúng đinh dạng, không cần kiểm tra dữ liệu nhập vào.
+Để đơn giản, chương trình chỉ xử lý các số _nguyên dương_. Giả định rằng dữ liệu nhập vào luôn đúng định dạng, không cần kiểm tra dữ liệu nhập vào.
 
 # Hướng dẫn bài giải
 
@@ -272,7 +272,7 @@ Cuối cùng, ta có chương trình hoàn chỉnh:
 
 # Lời kết
 
-Chúng ta đã cùng nhau giải bài thực hành chuyển 1 số thập phân sang hệ cơ số 32 và ngược lại, dùng bảng mã kiểm [Crockford Base32](/cms/others/crockford-base32/). Bài tập này giúp bạn củng cố kiến thức về nhập/xuất dữ liệu, tạo và sử dụng hàm, vòng lặp và kiểm tra điều kiện/rẽ nhánh chương trình với các câu lệnh `if` và `switch/case`.
+Chúng ta đã cùng nhau giải bài thực hành chuyển 1 số thập phân sang hệ cơ số 32 và ngược lại, dùng bảng mã [Crockford Base32](/cms/others/crockford-base32/). Bài tập này giúp bạn củng cố kiến thức về nhập/xuất dữ liệu, tạo và sử dụng hàm, vòng lặp và kiểm tra điều kiện/rẽ nhánh chương trình với các câu lệnh `if` và `switch/case`.
 
 Lời giải trong bài viết là 1 cách giải tham khảo, _không phải là lời giải duy nhất_. Bạn hãy chủ động trải nghiệm với các cách giải khác nhau của riêng bạn.
 
