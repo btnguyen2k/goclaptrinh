@@ -8,6 +8,10 @@
 ```bs-alert primary
 
 Viết chương trình C hoặc C++, chuyển 1 số thập phân (ví dụ `12345`) sang hệ cơ số 32 sử dụng bảng mã [Crockford Base32](/cms/others/crockford-base32/) (ví dụ `C1S`).
+
+**_Xem thêm các phiên bản khác của bài tập:_**
+- [C#](/cms/beginner/csharp-crockford-base32-numbers/)
+- [Java](/cms/beginner/java-crockford-base32-numbers/)
 ```
 
 Bài tập này củng cố kiến thức về:

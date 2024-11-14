@@ -14,11 +14,14 @@ tags:
   ghissue_comment: Vui lòng tạo [GitHub issue](https://github.com/btnguyen2k/goclaptrinh/issues) để góp ý cho nội dung bài viết, hoặc đề xuất bài viết mới.
   tutorial_only: "Lưu ý: Đây là bài tập để ôn và củng cố kiến thức, không phải là bài giảng về lập trình."
   playground_ccpp: |
-    Chúng tôi khuyến khích bạn cùng mở trình soạn thảo văn bản, hoặc trình biên dịch C/C++ để thực hành theo bải giải.
+    Chúng tôi khuyến khích bạn cùng mở trình soạn thảo văn bản, hoặc trình biên dịch C/C++ để thực hành theo bài giải.
     Nếu máy tính của bạn không có sẵn trình biên dịch C/C++, bạn có thể sử dụng bản online tại [OnlineGDB](https://www.onlinegdb.com/) để thực hành.
   playground_java: |
-    Chúng tôi khuyến khích bạn cùng mở trình soạn thảo văn bản, hoặc trình biên dịch Java để thực hành theo bải giải.
+    Chúng tôi khuyến khích bạn cùng mở trình soạn thảo văn bản, hoặc trình biên dịch Java để thực hành theo bài giải.
     Nếu máy tính của bạn không có sẵn trình biên dịch Java, bạn có thể sử dụng bản online tại [OnlineGDB](https://www.onlinegdb.com/) để thực hành.
+  playground_csharp: |
+    Chúng tôi khuyến khích bạn cùng mở trình soạn thảo văn bản, hoặc trình biên dịch C# để thực hành theo bài giải.
+    Nếu máy tính của bạn không có sẵn trình biên dịch C#, bạn có thể sử dụng bản online tại [OnlineGDB](https://www.onlinegdb.com/) để thực hành.
   quest_intro: |
     Bài tập nhiệm vụ không yêu cầu bạn phải sử dụng các thuật toán nâng cao hay phức tạp. Tuy nhiên sẽ đòi hỏi bạn kết hợp tốt các kiến thức lập trình cơ bản để giải quyết vấn đề.
     Chúng tôi sẽ cung cấp dữ liệu input/output và gợi ý hướng giải quyết, nhưng sẽ không có code bài giải mẫu.
