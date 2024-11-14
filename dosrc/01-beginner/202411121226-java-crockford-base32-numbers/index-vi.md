@@ -8,6 +8,10 @@
 ```bs-alert primary
 
 Viết chương trình Java, chuyển 1 số thập phân (ví dụ `12345`) sang hệ cơ số 32 sử dụng bảng mã [Crockford Base32](/cms/others/crockford-base32/) (ví dụ `C1S`).
+
+**_Xem thêm các phiên bản khác của bài tập:_**
+- [C/C++](/cms/beginner/c-cpp-crockford-base32-numbers/)
+- [C#](/cms/beginner/csharp-crockford-base32-numbers/)
 ```
 
 Bài tập này củng cố kiến thức về:
@@ -28,7 +32,7 @@ _Xem bài viết giới thiệu về hệ cơ số 32 và bảng mã Crockford B
 
 ### Nhập dữ liệu
 
-Phần này đơn giản nên ta làm trước. Ta sẽ viết 2 hàm: 1 hàm nhập 1 số thập phân và 1 hàm nhập 1 số ở hệ cơ số 32 từ bàn phím:
+Phần này đơn giản nên ta làm trước. Ta sẽ viết 2 method: 1 method nhập 1 số thập phân và 1 method nhập 1 số ở hệ cơ số 32 từ bàn phím:
 
 ```java
 // file GocLapTrinh.java
